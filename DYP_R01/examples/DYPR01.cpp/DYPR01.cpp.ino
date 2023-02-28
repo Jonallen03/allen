@@ -5,7 +5,7 @@ byte addr;
 void setup(){
   Serial1.begin(115200);
   Wire.begin();
-  int address = DR.Search();     //retrive an address of a device
+  int address = DR.Search();     //retrieve an address of a device
   addr = address;
   Serial1.print("The address of the device is 0x");
   if (address < 16){
